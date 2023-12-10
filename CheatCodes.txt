@@ -1,0 +1,23 @@
+'  --> this is commment in VBlearn
+
+# Intro
+Sub Macro_name()
+
+' code here
+
+End Sub
+
+# Sheets
+Sheets("Sheet1").Activate
+Sheets("Sheet1").Select
+
+
+# Workbooks
+Workbooks("VBlearn1.xlsx").Activate
+
+# Display MsgBox
+MsgBox (ThisWorkbook.Name)
+MsgBox (ActiveWorkbook.Name)
+
+# Variables
+
