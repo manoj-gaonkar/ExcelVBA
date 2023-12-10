@@ -1,6 +1,6 @@
-```
-'  --> this is commment in VBlearn
-```
+# VBA
+
+- ( ` ) --> this is commment in VBlearn
 
 # Intro
 ```
@@ -79,4 +79,18 @@ Dim sht as Worksheet
 For each sht in ThisWorkbook.Sheets
     Msgbox sht.name
 Next sht
+```
+
+#  Do While Loop
+
+```
+Dim x As Integer
+x = 1
+
+Do While Cells(x, 3).Value <> ""
+
+Cells(x, 3).Value = 11
+x = x + 1
+
+Loop
 ```
