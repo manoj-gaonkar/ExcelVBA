@@ -94,3 +94,39 @@ x = x + 1
 
 Loop
 ```
+# Do Until Loop
+```
+Dim x As Integer
+x = 1
+
+Do Until x > 4 #runs until the given condition is matched
+
+Cells(x, 5).Value = 11
+x = x + 1
+
+Loop
+```
+# Types of errors
+- Syntax errors
+- compilation errors
+- runtime errors
+
+# Error handling
+- first method is to skip the error
+```
+On Error Resume Next
+```
+- second method is to write an error msg for it
+	- here an ==label== is defined which runs after finding an error in the code
+	- here ==errmsg== is an label 
+```
+On Error GoTo errmsg
+
+MsgBox 34 / 0
+
+Done:
+    Exit Sub
+
+errmsg:
+    MsgBox "this is a mathematical error"
+```
